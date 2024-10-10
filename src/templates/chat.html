@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Chat Session: {{ session_id }}</h2>
+
+<div id="chat-content">
+    {% if question and response %}
+        <div id="chat-window" style="height: 300px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px;">
+            <div>
+                <strong>You:</strong>
+                <p>{{ question }}</p>
+            </div>
+            <div>
+                <strong>Chatbot:</strong>
+                <p>{{ response }}</p>
+            </div>
+        </div>
+    {% else %}
+        <div id="chat-window" style="height: 300px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px;">
+            <!-- Chat history will be loaded here -->
+        </div>
+    {% endif %}
+</div>
+
+<form id="chat-form" method="POST" data-session-id="{{ session_id }}">
+    <p>
+        Enter your question:<br>
+        <textarea id="question" name="question" rows="4" cols="50" required></textarea>
+    </p>
+    <p><input type="submit" value="Get Response"></p>
+</form>
+
+<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+{% endblock %}

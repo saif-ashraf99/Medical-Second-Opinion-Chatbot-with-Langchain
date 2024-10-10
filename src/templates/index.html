@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Chat Session: {{ session_id }}</h2>
+{% if question %}
+    <div>
+        <strong>Question:</strong>
+        <p>{{ question }}</p>
+    </div>
+    <div>
+        <strong>Response:</strong>
+        <p>{{ response }}</p>
+    </div>
+{% endif %}
+<form method="POST">
+    <p>
+        Enter your question:<br>
+        <textarea name="question" rows="4" cols="50"></textarea>
+    </p>
+    <p><input type="submit" value="Get Response"></p>
+</form>
+{% endblock %}

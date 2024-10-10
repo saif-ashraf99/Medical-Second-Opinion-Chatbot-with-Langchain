@@ -1,0 +1,17 @@
+flask
+flask-login
+flask-wtf
+flask-sqlalchemy
+werkzeug
+torch
+transformers
+faiss-cpu
+sentence-transformers
+PyPDF2
+python-docx
+tika
+nltk
+numpy
+tqdm
+wtforms
+email-validator
