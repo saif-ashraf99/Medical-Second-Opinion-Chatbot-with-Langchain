@@ -3,3 +3,5 @@ venv/
 Medical-Second-Opinion-Chatbot-with-Langchain/data/patient_data/uploads
 .env
 instance
+**/__pycache__/**
+*.pyc
