@@ -116,14 +116,15 @@ medical-chatbot/
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/medical-chatbot.git
-   cd medical-chatbot
+   git clone https://github.com/saif-ashraf99/Medical-Second-Opinion-Chatbot-with-Langchain.git
+   cd Medical-Second-Opinion-Chatbot-with-Langchain
    ```
-2. **Set Up a Virtual Environment**
+2. **Set Up a Conda Environment**
 
    ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   conda create --name my_env python=3.9
+   conda activate my_env
+
    ```
 3. **Install Dependencies**
 
@@ -243,12 +244,6 @@ Contributions are welcome! Please follow these steps:
 4. **Submit a Pull Request**: Describe your changes and submit a PR for review.
 
 Please ensure that your contributions comply with all legal and ethical guidelines.
-
----
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ---
 
